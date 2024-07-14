@@ -1,5 +1,5 @@
 # KafkaCrypto
-In diesem Projekt werden Live Crypto Daten über ein Python Producer Programm und die Advanced Trade API von Coinbase in einen Kafka Broker geladen und anschließend von Python Consumer Programmen ausgewertet. 
+In diesem Projekt werden Live Crypto Daten über ein Python Producer Programm und die Advanced Trade API von Coinbase in ein Topic eines Apache Kafka Brokers geladen und anschließend von Python Consumer Programmen ausgewertet. 
 
 Voraussetzung: Apache Kafka Broker
 https://kafka.apache.org/
@@ -22,4 +22,4 @@ plot.py
 Erlaubt dem Nutzer einen Chart eines ausgewählten Coins zu erstellen auf Basis der zuvor erstellten CSV Dateien.
 
 alert.py
-Erlaubt dem Nutzer einen Preisalarm zu einem ausgewählten Coin aufzusetzen, das Programm kann mehrfach parallel nebeneinander laufen und erlaubt einen parallelen Alert pro Währung.
+Erlaubt dem Nutzer einen Preisalarm zu einem ausgewählten Coin aufzusetzen, das Programm kann mehrfach parallel nebeneinander laufen und erlaubt genau einen parallelen Alert pro Währung.
